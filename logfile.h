@@ -8,12 +8,13 @@
 
 class SolarPanel_logFile {
   public:
-  void init();
+  String buffer;
+  void save();
   void write2log(String str);
 
   private:
   File lf;
-  int ok = 0;
+  int ok = 1;
 };
 
 #endif
